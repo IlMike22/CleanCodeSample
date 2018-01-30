@@ -9,11 +9,9 @@ import java.lang.ref.WeakReference
  * Initialises all parts of clean code.
  */
 
-class MainConfigurator
-{
+class MainConfigurator {
     companion object {
-        fun configure(activity:MainActivity)
-        {
+        fun configure(activity: MainActivity) {
             val presenter = MainPresenter()
             presenter.output = WeakReference(activity)
 
